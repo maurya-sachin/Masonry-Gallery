@@ -2,6 +2,9 @@
 
 This is a simple web page showcasing a Masonry Layout for a gallery using HTML, CSS, and JavaScript. The Masonry Layout is achieved using the Masonry library.
 
+## Live Demo
+- https://maurya-sachin.github.io/Masonry-Gallery/
+
 ## Instructions
 
 1. Clone or download the repository.
