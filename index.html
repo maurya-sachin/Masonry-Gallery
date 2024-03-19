@@ -138,7 +138,26 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-    
+    <script>
+        $(document).ready(() => {
+
+            // for images
+            $(".wrapper").imagesLoaded(function () {
+                $(".wrapper").masonry({
+                    itemSelector: ".gallery-item",
+                    columnWidth: 250
+                });
+            });
+
+            var lazyloadElements = document.querySelectorAll(".lazy");
+            lazyloadElements.forEach(function (el) {
+                if (el.tagName === 'IMG') {
+                    el.src = el.dataset.src;
+                }
+                el.classList.remove('lazy');
+            });
+        });
+    </script>
 </body>
 
 </html>
