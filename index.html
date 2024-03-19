@@ -149,6 +149,25 @@
                 });
             });
 
+            //for video
+
+            // var posterCount = $('.wrapper video').length;
+            // var postersLoaded = 0;
+
+            // function adjustMasonryLayout() {
+            //     postersLoaded++;
+
+            //     if (postersLoaded >= posterCount) {
+            //         $('.wrapper').masonry({
+            //             itemSelector: '.gallery-item',
+            //             columnWidth: 250
+            //         });
+            //         $('.wrapper').masonry('reloadItems');
+            //         $('.wrapper').masonry('layout');
+            //     }
+            // }
+            // $('.wrapper video').on('loadeddata', adjustMasonryLayout);
+
             var lazyloadElements = document.querySelectorAll(".lazy");
             lazyloadElements.forEach(function (el) {
                 if (el.tagName === 'IMG') {
